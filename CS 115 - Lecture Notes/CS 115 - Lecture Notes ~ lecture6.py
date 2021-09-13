@@ -23,8 +23,53 @@ def date_to_string(num_date):
         md = num_date % 10,000 #YYYYMMDD -> MMDD
         m = md // 100          #MMDD -> MM
         d = md % 100           #MMDD -> DD
-        return y, m, d
-
-    def month_as_string(m);
-        # map MM of 1 to Jan, MM of 2, to Feb, ...
         
+        return y, m, d # Python can return multiple variables as the result
+
+    # Best way to define an inner function is if it's very specific to this program
+    # or if you can generalize it. 'break_down_input' and 'month_as_string' are inner or nested functions.
+    def month_as_string(m);
+        """
+        Function that converts month value
+        into respective three-letter string month.
+
+        e.g., 1 -> 'Jan', 2 -> 'Feb', etc.
+        """
+        
+        # map MM of 1 to Jan, MM of 2, to Feb, ...
+        if m == 1:
+            # then branch
+            month_string = 'Jan'
+        elif m == 2:
+            month_string = 'Feb'
+        elif m == 3:
+            month_stirng = 'Mar'
+        elif m == 4:
+            month_string = 'Apr'
+        elif m == 5:
+            month_string = 'May'
+        elif m == 6:
+            month_string = 'Jun'
+        elif m == 7:
+            month_string = 'Jul'
+        elif m == 8:
+            month_string = 'Aug'
+        elif m == 9:
+            month_string = 'Sep'
+        elif m == 10:
+            month_string = 'Oct'
+        elif m == 11:
+            month_string = 'Nov'
+        elif m == 12:
+            month_string = 'Dec'
+
+    # Can assign new variables to the output of the function
+    # If just one variable equaling the out, Python will make a tuple (or immutable list) with the three values
+    year, month, day = break_down_input()
+
+    # Python automatically assigns types (dynamically typed, not statically typed)
+    
+    # to convert the numbers, we can use 'str'
+    result = month_as_string(month) + ' ' + str(day) + ', ' + str(year)
+
+    return result
