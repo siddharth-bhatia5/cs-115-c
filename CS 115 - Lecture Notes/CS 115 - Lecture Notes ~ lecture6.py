@@ -17,18 +17,36 @@ def date_to_string(num_date):
 
     # \' is an escape-sequence for the single-quote (')
 
+    # If you made 'break_down_input()' a sister function,
+    # you would add a parameter that takes in 'num_date'
+
+    year = month = day = 0 # can assign multiple variables a value
+
     # helper function
     def break_down_input():
+
+        # How do you drop digits? Use integer division.
+        # number of digits to drop = number of zeros
+        
         y = num_date // 10,000 #YYYYMMDD -> YYYY
+
+        # How do you recover the last few digits? Use modulus.
+        # number of digits to get from right = number of zeros
+
+        # 0913 = 20210913 - 2021 * 10000
+        # md = num_date - y * 10000
+        
         md = num_date % 10,000 #YYYYMMDD -> MMDD
         m = md // 100          #MMDD -> MM
         d = md % 100           #MMDD -> DD
+
+        # Output of break_down_input() is a tuple (immutable list)
         
         return y, m, d # Python can return multiple variables as the result
 
     # Best way to define an inner function is if it's very specific to this program
     # or if you can generalize it. 'break_down_input' and 'month_as_string' are inner or nested functions.
-    def month_as_string(m);
+    def month_as_string(m):
         """
         Function that converts month value
         into respective three-letter string month.
