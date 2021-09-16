@@ -102,7 +102,4 @@ def getLongestString():
     # reduce[compare, lst] gives you the index of the list with two elements including the longest string
     # therefore, return reduce[compare, lst][1] will give you the answer
 
-print(getLongestString())
-
-
 # print(getLongestString())
