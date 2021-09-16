@@ -15,15 +15,15 @@ def all_true(lst):
         return True
     return reduce(check_boolean, lst)
 
-lst1 = [False, False, True]
-lst2 = [True, True, False]
-lst3 = [True, True, True]
-lst4 = [True, True, True, True]
-print(all_true(lst1))
-print(all_true(lst2))
-print(all_true(lst3))
-print(all_true(lst4))
-print()
+# lst1 = [False, False, True]
+# lst2 = [True, True, False]
+# lst3 = [True, True, True]
+# lst4 = [True, True, True, True]
+# print(all_true(lst1))
+# print(all_true(lst2))
+# print(all_true(lst3))
+# print(all_true(lst4))
+# print()
 
 #######################################################################################
 # Task 1.1: Use reduce to determine if AT LEAST one element in a boolean list is true
@@ -35,13 +35,13 @@ def one_true(lst):
         return False # otherwise, returns false
     return reduce(check_boolean2, lst)
 
-print(one_true(lst1))
-print(one_true(lst2))
-print(one_true(lst3))
-print(one_true(lst4))
+# print(one_true(lst1))
+# print(one_true(lst2))
+# print(one_true(lst3))
+# print(one_true(lst4))
 
-lst5 = [False, False, False]
-print(one_true(lst5))
+# lst5 = [False, False, False]
+# print(one_true(lst5))
 
 #######################################################################################
 # Task 2: Use map and reduce to return how many elements are True in a boolean list
@@ -55,10 +55,10 @@ def count_true(lst):
         return value1 + value2 
     return reduce(count_true, list(map(find_true, lst))) # summates number of Trues
                   
-print(count_true(lst1))
-print(count_true(lst2))
-print(count_true(lst3))
-print(count_true(lst4))
+# print(count_true(lst1))
+# print(count_true(lst2))
+# print(count_true(lst3))
+# print(count_true(lst4))
 
 # use map to create a list of just numbers from the boolean list
 # then, use reduce to count the number of True values to count the number of elements
@@ -97,4 +97,4 @@ def getLongestString():
             return length2
     return reduce(get_biggest, list(map(string_length, strings))) # returns the biggest string
 
-print(getLongestString())
+# print(getLongestString())
