@@ -84,17 +84,25 @@ def getInput():
 # Hint: The 'map' part of your program should take a string s into a length-2 list [len(s), s].
 def getLongestString():
     strings = getInput()
-    # use map first --> find the string with
-    # map a function that changes the strings to the length of the strings
-    def string_length(string):
-        return len(string) # we have a list of the length of strings
 
-    # use the reduce function to get the bigger parameter
-    def get_biggest(length1, length2):
-        if (length1 > length2):
-            return length1
+    def create_sub_list(s):
+        """Creates sub lists with the length of the string and the string itself"""
+        return [len(s), s] 
+
+    def compare(lst1, lst2):
+        """Compares the length of the string by checking the first element of the sub lists"""
+        if lst1[0] > lst2[0]:
+            return lst1
         else:
-            return length2
-    return reduce(get_biggest, list(map(string_length, strings))) # returns the biggest string
+            return lst2
+
+    # returns the list with the greatest string
+    return reduce(compare, list(map(create_sub_list, strings)))[1] # accesses the string by indexing the second element
+
+    # reduce[compare, lst] gives you the index of the list with two elements including the longest string
+    # therefore, return reduce[compare, lst][1] will give you the answer
+
+print(getLongestString())
+
 
 # print(getLongestString())
