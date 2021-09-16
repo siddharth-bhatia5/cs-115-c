@@ -1,6 +1,6 @@
 ##########################################
 # Name: Sid Bhatia
-# Pledge: I pledge my honor that I have abided by the Steven's Honor System.
+# Pledge: I pledge my honor that I have abided by the Stevens Honor System.
 ##########################################
 
 # Import reduce from the functools package
