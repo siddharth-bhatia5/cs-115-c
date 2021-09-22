@@ -1,7 +1,7 @@
 ############################################################
 # CS115 Lab 4
-# Name: 
-# Pledge: 
+# Name: Sid Bhatia
+# Pledge: I pledge my honor that I have abided by the Stevens Honor System.
 ############################################################
 
 from functools import reduce
