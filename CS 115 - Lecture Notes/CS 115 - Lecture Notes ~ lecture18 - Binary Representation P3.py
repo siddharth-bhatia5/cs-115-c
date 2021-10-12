@@ -2,9 +2,11 @@
 # CS 115-C
 # Lecture #18 - Binary Representation P3
 
+
+# ***MIDTERM EXAM:***
 # Python Basics
 # Map and Reduce; Lambda Expression; Filter
-# Recursion w/Use-It or Lose-it
+# Recursion w/Use-It or Lose-it (most likely) but also check head-or-tail
 # Binary question --> conversion, addition, and multiplication could be on exam
 # Negative numbers won't be on it
 
@@ -75,3 +77,24 @@
 #      11100111
 
 # Binary subtraction wouldn't be on the exam
+
+# Negative Numbers:
+# Sign and magnitude: 1 .. 1
+# Biased binary (BCD)
+
+# One's Complement (-3): 1 .. 00
+# First bit is the sign; 1 = negative sign
+
+# 0000, 0011
+
+#   1111, 1100
+#   0000, 0001
+# + ----------
+#   1111, 1101
+
+# (1)011
+# + 101
+# -----
+#  000 --> any 'care over' greater than the number of bits are thrown aways
+
+# Two's Complemen: one's complement then increase
