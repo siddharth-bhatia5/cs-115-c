@@ -1,0 +1,14 @@
+will there be use it or loose it?
+From Jason Vera to Everyone:  07:53 PM
+individually timed
+- 5 questions (+/- 1 question, but most likely 5)
+   - 1 question on lists (python basics)
+   - 1 question on lambda expressions
+   - 1 question on map/reduce/filter/etc
+   - 1 question on recursion (can be use it/lose it or something more basic so prepare for the worst)
+   - 1 question on binary arithmetic (no subtraction, multiplication would be with russian peasants)
+- Allowed a study sheet
+   - handwritten
+   - one sided
+   - including the pledge (can be on the back of the paper to save space)
+   - turned in, you have to turn it in even if its a blank page
