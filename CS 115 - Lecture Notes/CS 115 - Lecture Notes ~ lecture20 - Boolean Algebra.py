@@ -48,9 +48,30 @@
 ## Describing a Boolean function (inputs and outputs: 0 and 1)
 ### Words: f is a function of TWO binary (Boolean) variables such that the output is 1 *if and only if exactly one of the two inputs is 1*
 ### Table: x, y | f(x,y)
-###        0  0 |   0
-###        0  1 |   1
-###        1  0 |   1
-###        1  1 |   0
+###   0    0  0 |   0
+###   1    0  1 |   1
+###   2    1  0 |   1
+###   3    1  1 |   0
 
 ### The table works fine and is called a "truth table."
+
+# NOT, AND, OR
+
+## Uniary Boolean function; NOT(x) outputs 1 if x is 0; written as bar(x) or x-bar
+##  x | NOT x
+##  0 |  1
+##  1 |  0
+
+## Binary Boolean function; AND(x,y) outputs 1 if x is 1 and y is 1 (both inputs are 1) [conjuncion]; written as xy
+##  x, y | x AND y
+##  0  0 |    0
+##  0  1 |    0
+##  1  0 |    0
+##  1  1 |    1
+
+## Binary Boolean function; OR(x,y) outputs 1 if either input is 1 (or both) [inclusive OR]; written as x + y
+##  x, y | x OR y
+##  0  0 |    0
+##  0  1 |    1
+##  1  0 |    1
+##  1  1 |    1
