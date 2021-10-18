@@ -69,9 +69,38 @@
 ##  1  0 |    0
 ##  1  1 |    1
 
-## Binary Boolean function; OR(x,y) outputs 1 if either input is 1 (or both) [inclusive OR]; written as x + y
+## Multiplication refers to 'and'
+
+## Binary Boolean function; OR(x,y) outputs 1 if either input is 1 (or both) [disjunction] and [inclusive OR]; written as x + y
 ##  x, y | x OR y
 ##  0  0 |    0
 ##  0  1 |    1
 ##  1  0 |    1
 ##  1  1 |    1
+
+## 1 + 1 = 2, but, since you only have the option of 0 and 1, you represent it to be 1
+
+# Playing with Functions
+
+## Describe these functions in English:
+### x x-bar --> x AND NOT x --> 1 if x is 1 and NOT x is 1 --> 1 if x is 1 and x is 0 --> never going to be 1 since it's impossible --> x\bar[x] = 0
+#### Table:  x | x\bar[x]
+####         0 |    0
+####         1 |    0
+
+### xx --> x AND x --> 1 if x is 1 and x is 1 --> 1 if x is 1
+#### Table:  x | xx
+####         0 | 0
+####         1 | 1
+
+### x + \bar[x] --> X OR NOT X --> 1 if x is 1 or NOT x is 1 --> 1 if x is 1 or x is 0 --> always going to be 1 \ x + x\bar[x] = 1
+#### Table: x | x + \bar[x]
+####        0 |     1
+####        1 |     1
+
+### xy + \bar[x]\bar[y] --> (x AND y) or (NOT x AND NOT y) --> 1 if (x is 1 and y is 1) or (x is 0 and x is 0) --> 1 if both are the same (0 0 or 1 1)
+#### Table: x, y | xy + \bar[x]\bar[y]
+####        0  0 |          1
+####        0  1 |          0
+####        1  0 |          0
+####        1  1 |          1
