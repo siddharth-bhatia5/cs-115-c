@@ -37,3 +37,36 @@
 #### If your row has a 0 with that variable, then the term in your midterm is 'NOT' or negation of variable
 #### If your row has a 1 with that variable, then the variable shows up positive
 
+### Step #1:
+#### Create the truth table
+
+### Step #2:
+#### Focus on the rows with 1
+
+### Step #3:
+#### Have to do conjunction of all variables (AND); order doesn't matter bceause it commutative at the end
+#### You're seeing ****WHICH IS THE PRODUCT OF ALL ONES TO GIVE THE RESULTANT ONE****
+
+### Step #4:
+#### Any function can be viewed as the superimposition of those minterms, so disjunction of all minterms
+
+### AND, OR, NOT --> can be described as any combination of AND, ORs, NOTs
+
+# Digital Logic Gates
+## Final goal is to get hardware to care it out with logic gates
+
+### NOT is viewed as a small circle or 'bubble' on another gate
+### The gate is viewed a signal coming in and a signal goes out
+
+#### Flat side = input side; curved/smooth side = output side for AND
+#### Curved side = input side; pointed side = output side for OR
+
+#### AND: flat --> curved
+#### OR: curved --> pointed
+
+#### Symbols for each operation --> gates for each operations
+
+#### when variable is used multiple times, it splits in circuit digram with a *wire*
+
+#### Advantage of circuit diagrams removes any knowledge of precedence --> easiest for hardware
+#### Hardest description of function --> take it down to a concrete level with diagrams
