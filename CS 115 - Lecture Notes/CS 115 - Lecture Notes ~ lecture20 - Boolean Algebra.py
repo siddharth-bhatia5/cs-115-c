@@ -83,24 +83,28 @@
 # Playing with Functions
 
 ## Describe these functions in English:
-### x x-bar --> x AND NOT x --> 1 if x is 1 and NOT x is 1 --> 1 if x is 1 and x is 0 --> never going to be 1 since it's impossible --> x\bar[x] = 0
+### x x-bar --> x AND NOT x --> 1 if x is 1 and (NOT x) is 1 --> 1 if x is 1 and x is 0 --> 1 if x = 1 and x = 0 --> never going to be 1 since it's impossible --> x\bar[x] = 0
 #### Table:  x | x\bar[x]
 ####         0 |    0
 ####         1 |    0
 
-### xx --> x AND x --> 1 if x is 1 and x is 1 --> 1 if x is 1
+### xx --> x AND x --> 1 if x is 1 and x is 1 --> 1 if x = 1 --> *therefore, x^2 or (xx) is 1 in Boolean algebra*
 #### Table:  x | xx
 ####         0 | 0
 ####         1 | 1
 
-### x + \bar[x] --> X OR NOT X --> 1 if x is 1 or NOT x is 1 --> 1 if x is 1 or x is 0 --> always going to be 1 \ x + x\bar[x] = 1
+### x + \bar[x] --> X OR NOT X --> 1 if x is 1 or NOT x is 1 --> 1 if x is 1 or x is 0 --> x = 1 or x = 0 --> always going to be 1 \ x + x\bar[x] = 1
 #### Table: x | x + \bar[x]
 ####        0 |     1
 ####        1 |     1
 
-### xy + \bar[x]\bar[y] --> (x AND y) or (NOT x AND NOT y) --> 1 if (x is 1 and y is 1) or (x is 0 and x is 0) --> 1 if both are the same (0 0 or 1 1)
+### 'NOT' operator is the highest precedence in the order of operations
+
+### xy + \bar[x]\bar[y] --> (x AND y) or ((NOT x) AND (NOT y)) --> 1 if (x is 1 and y is 1) or (x is 0 and x is 0) --> (x = 1 and y = 1) or (x = 0 and y = 0) --> 1 if both are the same (0 0 or 1 1)
 #### Table: x, y | xy + \bar[x]\bar[y]
 ####        0  0 |          1
 ####        0  1 |          0
 ####        1  0 |          0
 ####        1  1 |          1
+
+### As the expression grows, it becomes increasingly difficult to simply a Boolean expression or finding a equivalent expression
