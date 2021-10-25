@@ -23,6 +23,13 @@
 ## All the 'usual' Boolean functions compute:
 ### f(x,y) = f(y,x) --> commutativity
 
+### g(x,y) = "x <= y"
+### x,y | g(x,y)
+### 0 0 |   0
+### 0 1 |   1
+### 1 0 |   0
+### 1 1 |   0
+
 ## AND, OR, and XOR associative
 ### f(f(x,y), z) = f(x, f(y,z)) --> associativity
 ### e.g., (x AND y) AND z = x AND (y AND z)
