@@ -41,4 +41,6 @@
 ### \bar[xy] = \bar[x] + \bar[y]
 ### \bar[x + y] = \bar[x]\bar[y]
 
-### Can have negation before or after the logic gate
+#### Can have negation before or after the logic gate
+#### Can have the negation of the negation to apply DeMorgan's Law 
+#### (compliment of compliment cancels each other out)
