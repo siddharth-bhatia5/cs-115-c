@@ -9,15 +9,6 @@
 ## e.g., A function of TWO binary inputs x,y where the outputs
 ## is 1 iff x /neq y
 
-## Table:    x,y | f(x,y)
-##           0 0 |   0
-
-
-
-# AND, OR, NOT is a "Universal Set"
-## \bar[x]\bar[y] = \bar[x] + \bar[y]
-## \bar[x + y] = \bar[x]\bar[y]
-
 # Properties of Boolean Functions
 
 ## All the 'usual' Boolean functions compute:
@@ -43,3 +34,11 @@
 ###         1   0   1 |  0   |   0
 ###         1   1   0 |  1   |   0
 ###         1   1   1 |  1   |   1
+
+# AND, OR, NOT is a "Universal Set"
+
+## De Morgan's Laws:
+### \bar[xy] = \bar[x] + \bar[y]
+### \bar[x + y] = \bar[x]\bar[y]
+
+### Can have negation before or after the logic gate
