@@ -44,3 +44,8 @@
 #### Can have negation before or after the logic gate
 #### Can have the negation of the negation to apply DeMorgan's Law 
 #### (compliment of compliment cancels each other out)
+
+#### Can mimic AND just using OR and NOT, but AND, OR \neq NOT
+
+#### NOR is a "Universal Set"
+#### x NOR y = NOT(x OR y) 
