@@ -1,6 +1,6 @@
 # Sid Bhatia
 # CS 115-C
-# Lecture 22 -
+# Lecture 22 - Boolean Algebra P3
 
 ## ANY Boolean function (no matter how complex) can ALWAYS be expressed
 ## using just AND OR NOT --> Minterm Expansion Principle
@@ -48,4 +48,16 @@
 #### Can mimic AND just using OR and NOT, but AND, OR \neq NOT
 
 #### NOR is a "Universal Set"
-#### x NOR y = NOT(x OR y) 
+#### x NOR y = NOT(x OR y)
+
+#### Table:    x | y | x OR y | x NOR y
+####           0 | 0 |    0   |    1
+####           0 | 1 |    1   |    0
+####           1 | 0 |    1   |    0
+####           1 | 1 |    1   |    0
+
+#### x NOR y is 1 iff both inputs are 0
+##### 1) NOT x = x NOR x
+##### x | NOT x | x NOR x
+##### 0 |   1   |   1
+##### 1 |   0   |   0
