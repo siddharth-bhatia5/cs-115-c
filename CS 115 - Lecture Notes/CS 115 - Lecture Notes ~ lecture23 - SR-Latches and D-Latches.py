@@ -70,3 +70,16 @@
 ### 4 x 3 memory: 4 entries where each entry has 3 bits (number of entries = power of 2; entry has any # of bits)
 
 ### Bundle 3 D-Latches together by adding them together (have 6 data pins)
+### When you create a register, you lose the ability to change the bits individually
+
+#### If you k pins/entries, you can do 2^k memory
+#### Exponential and logarithmic relationship
+
+#### Entries: (0, 2^{k=1})
+
+##### Subcircuit 'Decoder' maps address bits to a particular register
+###### Strobe will indicate whether or not you will write or not but it will have to 
+###### match the address/selected row
+
+###### Even if data bit is sent to all the rows, only the one where the Strobe is activated and decoder
+###### specifies which row will write in the latches of the said row (look at slides)
