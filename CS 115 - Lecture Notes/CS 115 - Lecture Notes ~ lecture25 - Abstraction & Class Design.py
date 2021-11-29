@@ -42,6 +42,9 @@ class Point:
 
     def __str__(self):
         return 'x = ' + str(self.x)
+
+    def __repr__(self):
+        return 'Point(' + str(self.get_x()) + ')'
     
     def get_x(self): # getter method for x-coordinate
         return self.x
@@ -70,4 +73,12 @@ class Point:
         # assuming 'other' is an instance of Point
         new_x = self.get_x() + other.get_x()
         return Point(new_x)
+
+    def __abs__(self):
+        return abs(self.get_x())
+
+    def difference(self, other):
+        # assuming 'other' is an instance of Point
+        return abs(self - other)
+    
     
