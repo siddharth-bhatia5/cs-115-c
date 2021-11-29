@@ -59,10 +59,15 @@ class Point:
         return self.get_x() == 0
     
     def __sub__(self, other):
-        # assuming other is an instance of Point
+        # assuming 'other' is an instance of Point
         return self + (-other)
     
     def __neg__(self):
         neg_x = -1 * self.get_x()
         return Point(neg_x)
+    
+    def __add__(self, other):
+        # assuming 'other' is an instance of Point
+        new_x = self.get_x() + other.get_x()
+        return Point(new_x)
     
