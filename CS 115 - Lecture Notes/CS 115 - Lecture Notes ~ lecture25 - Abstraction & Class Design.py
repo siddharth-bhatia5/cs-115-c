@@ -102,3 +102,9 @@ class Point2D(Point):
         self.validate_or_signal((self.get_x(), y_val))
         self.y = y_val
     
+    def __str__(self):
+        return super().__str__() + ", y = " + str(self.get_y())
+    
+    def __repr__(self):
+        return 'Point 2D(' + str(self.get_x()) \
+            + ', ' + str(self.get_y()) + ')'
