@@ -80,5 +80,25 @@ class Point:
     def difference(self, other):
         # assuming 'other' is an instance of Point
         return abs(self - other)
-    
+
+class Point2D(Point):
+    def validate_params(self, values):
+        return super().validate_params(values[0]) and \
+            super().validate_params(values[1])
+        
+    def __init__(self, x_val = 0, y_val = 0):
+        self.validate_or_signal((x_val, y_val))
+        self.x = x_val
+        self.y = y_val
+
+    def get_y(self):
+        return self.y
+
+    def set_x(self, x_val):
+        self.valdidate_or_signal(x_val, self.get_y())
+        self.x = x_val
+
+    def set_y(self, y_val):
+        self.validate_or_signal((self.get_x(), y_val))
+        self.y = y_val
     
