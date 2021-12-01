@@ -108,3 +108,18 @@ class Point2D(Point):
     def __repr__(self):
         return 'Point 2D(' + str(self.get_x()) \
             + ', ' + str(self.get_y()) + ')'
+
+    def is_zero(self):
+        return super().is_zero and self.get_y() == 0
+        # return self.get_x() == 0 and self.get_y() == 0
+    
+    def __neg__(self):
+        neg_x = -1 * self.get_x()
+        neg_y = -1 * self.get_y()
+        return Point2D(neg_x, neg_y)
+    
+    def __add__(self, other):
+        # assuming 'other' is an instance of Point
+        new_x = self.get_x() + other.get_x()
+        new_y = self.get_y() + other.get_y()
+        return Point2D(new_x, new_y)
