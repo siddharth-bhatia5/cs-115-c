@@ -23,22 +23,25 @@
 # ** only new things: getter/setter
 # ** most of the other methods from Point will need to be adjusted
 
-import sys
+import sys, math
 
 class Point:
-    def validate_param(value): # checks if coordinate is an integer or float
+    def validate_params(value): # checks if coordinate is an integer or float
         return isinstance(value, int) or isinstance(value, float)
  
     def validate(self): # validates x-coordinate argument
-        return Point.validate_param(self.x)
+        return Point.validate_params(self.x)
 
-    def signal_validation_error(self): # error handling method
-        sys.exit("Invalid point: " + str(self))
+    def validate_or_signal(self, value): # error handling method
+        if not self.validate_params(value):
+            msg == 'Invalid parameter (' + str(value) \
+                + ') when creating'  
+            sys.exit("Invalid point: " + str(self))
 
     def __init__(self, value = 0): # constructor with default argument
         self.x = value
         if not self.validate(): 
-            self.signal_validation_error()
+            self.validate_or_signal()
 
     def __str__(self):
         return 'x = ' + str(self.x)
@@ -52,7 +55,7 @@ class Point:
     def set_x(self, value): # setter method for x-coordinate
         self.x = value
         if not self.validate():
-            self.signal_validation_error()
+            self.validate_or_signal()
 
     def __eq__(self, other):
         diff = self - other
@@ -123,3 +126,6 @@ class Point2D(Point):
         new_x = self.get_x() + other.get_x()
         new_y = self.get_y() + other.get_y()
         return Point2D(new_x, new_y)
+    
+    def __abs__(self):
+        return math.sqrt(self.get_x() ** 2 + self.get_y() ** 2)
